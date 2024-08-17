@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Cafe Cozy</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=1200 height=1200 style="width: 1200px; height: 1200px; background: url('Build/Aditi - Black Belt.jpg') center / cover"></canvas>
+    <script src="Build/Aditi - Black Belt.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Aditi - Black Belt.data.br",
+        frameworkUrl: "Build/Aditi - Black Belt.framework.js.br",
+        codeUrl: "Build/Aditi - Black Belt.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Cafe Cozy",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
